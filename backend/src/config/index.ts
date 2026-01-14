@@ -94,7 +94,8 @@ export const config = {
   // URLs permitidas para CORS (desarrollo)
   corsOrigins: process.env.CORS_ORIGINS
     ? process.env.CORS_ORIGINS.split(',')
-    : ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:3000', 'http://189.137.0.35:5173', 'http://189.137.0.35:3001'],
+    : ['*'],
+    //: ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:3000', 'http://189.137.0.35:5173', 'http://189.137.0.35:3001'],
   
   // Rate limiting
   rateLimit: {
