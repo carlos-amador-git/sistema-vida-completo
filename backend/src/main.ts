@@ -67,7 +67,24 @@ app.use(helmet({
 
 // CORS - permitir múltiples orígenes en desarrollo
 app.use(cors({
-  origin: config.corsOrigins,
+  //origin: config.corsOrigins,
+  origin: (origin, callback) => {
+    // Permitir solicitudes sin origen (como apps móviles o curl)
+    if (!origin) return callback(null, true);
+    
+    // Si la configuración incluye '*', permitir cualquier origen
+    if (config.corsOrigins.includes('*')) {
+      return callback(null, true);
+    }
+
+    // Verificar si el origen está en la lista permitida
+    if (config.corsOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      console.warn(`Origen bloqueado por CORS: ${origin}`);
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
