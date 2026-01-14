@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(docker-compose up:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run db:generate:*)",
+      "Bash(npm run db:push:*)",
+      "Bash(npm run dev:*)",
+      "Bash(cat:*)",
+      "Bash(npm run db:seed:*)",
+      "Bash(open http://localhost:5173)",
+      "Bash(curl:*)",
+      "Bash(open \"http://localhost:5173/emergency/8cc3df6e-44b1-4ae3-9af1-3e6df3500860\")",
+      "Bash(python3:*)",
+      "Bash(TOKEN=\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmI3NTNjOC00NGU4LTRkYmItYTkzMy1lMGVmNjJmZjA0NDYiLCJlbWFpbCI6ImRlbW9Ac2lzdGVtYXZpZGEubXgiLCJ0eXBlIjoiYWNjZXNzIiwiaWF0IjoxNzY3MDYyNjcxLCJleHAiOjE3NjcwNjM1NzF9.doFqqj3jjPyo1c-HetpDirpzYH7RSfqgq9y9tQDtxaI\")",
+      "Bash(__NEW_LINE__ echo \"=== PERFIL ===\")",
+      "Bash(__NEW_LINE__ echo \"=== DIRECTIVAS ===\")",
+      "Bash(__NEW_LINE__ echo \"=== REPRESENTANTES ===\")",
+      "Bash(__NEW_LINE__ echo \"=== QR ===\")",
+      "Bash(__NEW_LINE__ echo \"=== HISTORIAL ===\")",
+      "Bash(open \"http://localhost:5173/dashboard\")",
+      "Bash(npx ts-node:*)",
+      "Bash(npx tsc:*)",
+      "Bash(ls:*)",
+      "Bash(tree:*)",
+      "Bash(npm run db:seed-admin:*)",
+      "Bash(lsof:*)",
+      "Bash(printf:*)",
+      "Bash(xargs kill:*)",
+      "Bash(npx prisma migrate:*)",
+      "Bash(npx prisma db push:*)",
+      "Bash(open \"http://localhost:5173/admin/login\")",
+      "Bash(jq:*)",
+      "Bash(open \"http://localhost:5173/login\")",
+      "Bash(open \"http://localhost:5173/admin/subscriptions\")",
+      "Bash(xxd:*)",
+      "Bash(TOKEN=\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiMGMyYjhjODQtYTQyMC00YjdmLWE5NmEtOGY5OTExMzEyYzVkIiwiZW1haWwiOiJhZG1pbkBzaXN0ZW1hdmlkYS5teCIsInJvbGUiOiJBRE1JTiIsInBlcm1pc3Npb25zIjpbIm1ldHJpY3M6cmVhZCIsInVzZXJzOnJlYWQiLCJ1c2Vyczp3cml0ZSIsImF1ZGl0OnJlYWQiLCJhdWRpdDpleHBvcnQiLCJpbnN0aXR1dGlvbnM6cmVhZCIsImluc3RpdHV0aW9uczp3cml0ZSIsImhlYWx0aDpyZWFkIl0sImlzU3VwZXJBZG1pbiI6ZmFsc2UsInR5cGUiOiJhZG1pbl9hY2Nlc3MiLCJpYXQiOjE3NjcxNjYxODgsImV4cCI6MTc2NzE2NzA4OH0.Qu-OayKMsM0nraewffVWoncetnUKq69vYIIJOYAO2AU\")",
+      "Bash(bash:*)",
+      "Bash(open -na \"Google Chrome\" --args --incognito \"http://localhost:5173/admin/login\")"
+    ]
+  }
+}
